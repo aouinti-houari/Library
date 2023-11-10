@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Library</h1>
+        <button class="add" data-add-book>+ Add</button>
+      </header>
+      <form
+        action="#"
+        method="get"
+        class="new-book books-box hide"
+        data-books-box
+      >
+        <div>
+          <label for="title" class="book-title">Book Title: </label>
+          <input type="text" id="title" name="title" data-book-title required />
+        </div>
+        <div>
+          <label for="author" class="author-name">Author Name: </label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            data-author-name
+            required
+          />
+        </div>
+        <div>
+          <label for="pages" class="number-pages">Number of pages: </label>
+          <input
+            type="number"
+            id="pages"
+            name="number-pages"
+            data-number-pages
+            required
+          />
+        </div>
+        <div>
+          <label for="read">Have you read this book?</label>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+        </div>
+        <div class="buttons">
+          <button class="confirm">Add to list</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </form>
+      <section>
+        <div class="books" data-books></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

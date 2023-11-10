@@ -1,0 +1,142 @@
+/* Base styles */
+* {
+  font-family: sans-serif;
+}
+
+/* Flexbox container styles */
+header,
+.books-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Common text styles */
+header h1,
+.books-box {
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  width: 100vw;
+  padding: 15px;
+  background-color: lightslategrey;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+.add {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: lightslategrey;
+  height: 80px;
+  width: 150px;
+  border-radius: 20%;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/* Form and Book List Box styles */
+.books-box {
+  font-size: large;
+  font-weight: bold;
+  background-color: lightslategrey;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 500px;
+  height: 280px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.books-box div {
+  margin-top: 20px;
+}
+
+.books-box .buttons button {
+  background-color: #fff;
+  color: lightslategrey;
+  font-size: large;
+  padding: 5px;
+}
+
+/* Books display styles */
+.books {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.book .title {
+  padding-top: 30px;
+  color: #fff;
+  background-color: burlywood;
+  font-size: 24px;
+  height: 60px;
+}
+
+.book .author {
+  color: #000;
+  font-size: 22px;
+  font-style: italic;
+  height: 50px;
+}
+
+.book .pages {
+  color: #000;
+  font-size: 18px;
+  height: 25px;
+}
+
+/* Button styles */
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 25px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 70%;
+}
+
+.read {
+  background-color: palegreen;
+}
+
+.not-read {
+  background-color: silver;
+}
+
+.remove {
+  background-color: salmon;
+}
+
+/* Hide class */
+.hide {
+  display: none;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  text-align: center;
+}
